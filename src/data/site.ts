@@ -30,6 +30,12 @@ export const site = {
   email: "thefirm@assuageattorneys.com",
   /** Consultation requests — where the contact form is addressed. */
   consultationEmail: "info@assuageattorneys.com",
+  /**
+   * Selar booking page, where a client can schedule a consultation directly
+   * rather than sending an enquiry and waiting for a reply. Runs off-site, so
+   * it keeps working regardless of anything here.
+   */
+  bookingUrl: "https://selar.com/00z651j8u4",
   phone: "+234 806 050 5087",
   offices: [
     {

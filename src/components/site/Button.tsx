@@ -37,6 +37,29 @@ export function Button({
   return <button className={cn(buttonVariants({ variant, size }), className)} {...props} />;
 }
 
+/**
+ * A button-styled link to somewhere outside the site. `ButtonLink` wraps
+ * TanStack's `Link`, which only understands internal routes.
+ */
+export function ButtonAnchor({
+  variant,
+  size,
+  className,
+  children,
+  ...props
+}: ComponentProps<"a"> & VariantProps<typeof buttonVariants>) {
+  return (
+    <a
+      target="_blank"
+      rel="noreferrer noopener"
+      className={cn(buttonVariants({ variant, size }), className)}
+      {...props}
+    >
+      {children}
+    </a>
+  );
+}
+
 type LinkProps = Omit<ComponentProps<typeof Link>, "children" | "params"> & {
   children: ReactNode;
   params?: Record<string, string>;

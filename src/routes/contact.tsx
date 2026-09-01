@@ -1,4 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { ExternalLink } from "lucide-react";
+import { ButtonAnchor } from "@/components/site/Button";
 import { ContactForm } from "@/components/site/ContactForm";
 import { Container } from "@/components/site/Container";
 import { MicroLabel } from "@/components/site/MicroLabel";
@@ -37,7 +39,29 @@ function ContactPage() {
       <section className="py-16 md:py-24" aria-label="Consultation request form and office details">
         <Container className="grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-7">
-            <ContactForm />
+            {/* The quicker of the two routes, so it leads. */}
+            <div className="border-l-2 border-gold bg-mist p-6 md:p-8">
+              <MicroLabel>Book online</MicroLabel>
+              <h2 className="display-3 mt-3 text-ink">Choose a time that suits you</h2>
+              <p className="measure mt-3 text-[0.95rem] leading-relaxed text-ink-soft">
+                Schedule a private consultation directly, without waiting for a reply. You will be
+                taken to our booking page.
+              </p>
+              <ButtonAnchor href={site.bookingUrl} className="mt-6">
+                Book a consultation
+                <ExternalLink className="size-4" aria-hidden="true" />
+              </ButtonAnchor>
+            </div>
+
+            <div className="mt-12">
+              <MicroLabel>Or send an enquiry</MicroLabel>
+              <p className="measure mt-3 text-[0.95rem] leading-relaxed text-ink-soft">
+                Tell us about your matter and we will come back to you.
+              </p>
+              <div className="mt-8">
+                <ContactForm />
+              </div>
+            </div>
           </div>
           <aside className="lg:col-span-4 lg:col-start-9">
             <div className="bg-mist p-8">
@@ -58,7 +82,18 @@ function ContactPage() {
                   </a>
                 </p>
                 <p className="mt-3 text-sm">
-                  <span className="block text-ink-soft">Consultations</span>
+                  <span className="block text-ink-soft">Book a consultation</span>
+                  <a
+                    href={site.bookingUrl}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    className="text-gold-deep underline decoration-gold-deep/30 underline-offset-4 transition-colors duration-200 hover:text-ink"
+                  >
+                    Choose a time online
+                  </a>
+                </p>
+                <p className="mt-3 text-sm">
+                  <span className="block text-ink-soft">Consultations by email</span>
                   <a
                     href={`mailto:${site.consultationEmail}`}
                     className="break-all text-gold-deep underline decoration-gold-deep/30 underline-offset-4 transition-colors duration-200 hover:text-ink"
