@@ -41,7 +41,7 @@ function ContactPage() {
           <div className="lg:col-span-7">
             {/* The quicker of the two routes, so it leads. */}
             <div className="border-l-2 border-gold bg-mist p-6 md:p-8">
-              <MicroLabel>Book online</MicroLabel>
+              <MicroLabel>Book online on Selar</MicroLabel>
               <h2 className="display-3 mt-3 text-ink">Choose a time that suits you</h2>
               <p className="measure mt-3 text-[0.95rem] leading-relaxed text-ink-soft">
                 Schedule a private consultation directly, without waiting for a reply. You will be

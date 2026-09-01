@@ -3,6 +3,7 @@ import { ClosingBand } from "@/components/site/ClosingBand";
 import { Container } from "@/components/site/Container";
 import { MicroLabel } from "@/components/site/MicroLabel";
 import { PageHeader } from "@/components/site/PageHeader";
+import { StatStrip } from "@/components/site/StatStrip";
 import { Reveal } from "@/components/site/Reveal";
 import { absoluteUrl } from "@/data/site";
 
@@ -52,6 +53,8 @@ function AboutPage() {
         title="Addressing legal concerns with ease."
         intro="Assuage Attorneys is a Nigerian law firm providing legal services to individuals, families, entrepreneurs, companies and organisations."
       />
+
+      <StatStrip />
 
       {/* Firm story */}
       <section className="py-16 md:py-24" aria-labelledby="story-heading">

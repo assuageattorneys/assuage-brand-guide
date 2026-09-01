@@ -6,7 +6,6 @@ import { Container } from "@/components/site/Container";
 import { MicroLabel } from "@/components/site/MicroLabel";
 import { PracticeLedger } from "@/components/site/PracticeLedger";
 import { Reveal } from "@/components/site/Reveal";
-import { StatStrip } from "@/components/site/StatStrip";
 import { TeamCard } from "@/components/site/TeamCard";
 import { insights } from "@/data/insights";
 import { practiceAreas } from "@/data/practiceAreas";
@@ -79,8 +78,6 @@ function HomePage() {
           </div>
         </Container>
       </section>
-
-      <StatStrip />
 
       {/* Intro */}
       <section className="py-20 md:py-28" aria-labelledby="intro-heading">
