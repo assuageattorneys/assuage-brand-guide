@@ -4,7 +4,26 @@
 
 import type { Insight } from "./insights.types";
 
+import arbitration from "@/assets/insights/arbitration.jpg";
+
 export const insights: Insight[] = [
+  {
+    slug: "niger-delta-act",
+    title: "Niger Delta Act",
+    category: "Corporate",
+    date: "2026-09-03",
+    readTime: "1 min read",
+    excerpt: "A story of kids",
+    author: "nwokemba-gift",
+    image: arbitration,
+    imageAlt: "Financial documents and a pen on a dark wooden desk",
+    content: [
+      { type: "p", text: "This is to publish that ife is a boy" },
+      { type: "h2", text: "I am IFECHUKWU " },
+      { type: "p", text: "This is to disbound any false claim" },
+      { type: "quote", text: "A word is enough for the wise." },
+    ],
+  },
   {
     slug: "the-legality-of-no-refund-policy-under-nigerian-consumer-protection-law",
     title: "THE LEGALITY OF NO REFUND POLICY UNDER NIGERIAN CONSUMER PROTECTION LAW",
