@@ -32,7 +32,7 @@ export interface TeamMember {
 export const team: TeamMember[] = [
   {
     slug: "nwokemba-gift",
-    name: "Nwokemba Gift",
+    name: "Nwokemba Gift Nkechinyere",
     role: "Founder & Managing Partner",
     practiceAreas: [
       "corporate",
@@ -42,13 +42,13 @@ export const team: TeamMember[] = [
       "dispute-resolution",
     ],
     bio: [
-      "Nwokemba Gift Esq. is the founder and managing partner of Assuage Attorneys. She is a dedicated legal practitioner with a growing practice spanning business and commercial law, land law, family law and dispute resolution.",
+      "Nwokemba Gift Nkechinyere Esq. is the founder and managing partner of Assuage Attorneys. She is a dedicated legal practitioner with a growing practice spanning business and commercial law, land law, family law and dispute resolution.",
       "Her approach to legal practice is rooted in the belief that a lawyer should do more than identify the law: they should also anticipate risks, simplify complexity and provide practical solutions. That philosophy reflects the very essence of Assuage.",
       "Gift has developed a particular interest in matters involving families, businesses and commercial relationships, with a strong appreciation for the legal structures that protect people and their investments.",
       "Beyond her private practice, she is passionate about the professional development and advancement of lawyers. Her involvement in the Nigerian Bar Association Young Lawyers' Forum as Chairman of the Onitsha branch reflects her commitment to creating opportunities for young practitioners to learn, collaborate and grow within the profession.",
     ],
     portrait: nwokembaGift,
-    portraitAlt: "Portrait of Nwokemba Gift, Founder and Managing Partner",
+    portraitAlt: "Portrait of Nwokemba Gift Nkechinyere, Founder and Managing Partner",
   },
   {
     slug: "ofoegbu-favour-nneoma",
